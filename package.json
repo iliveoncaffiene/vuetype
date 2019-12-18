@@ -1,6 +1,6 @@
 {
-  "name": "vuetype",
-  "version": "0.3.2",
+  "name": "@iliveoncaffiene/vuetype",
+  "version": "1.0.1",
   "author": "katashin",
   "description": "Generate TypeScript declaration files for .vue files",
   "keywords": [
@@ -16,17 +16,18 @@
   ],
   "main": "dist/lib/api.js",
   "typings": "dist/lib/api.d.ts",
-  "homepage": "https://github.com/ktsn/vuetype",
-  "bugs": "https://github.com/ktsn/vuetype/issues",
+  "homepage": "https://github.com/iliveoncaffiene/vuetype",
+  "bugs": "https://github.com/iliveoncaffiene/vuetype/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktsn/vuetype.git"
+    "url": "https://github.com/iliveoncaffiene/vuetype.git"
   },
   "bin": {
     "vuetype": "dist/bin/vuetype.js"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/iliveoncaffiene" },
   "scripts": {
-    "prepublishOnly": "npm run lint && npm run test && npm run clean && npm run build",
+    "prepublishOnly": "npm run lint && npm run clean && npm run build",
     "clean": "rimraf dist",
     "dev": "tsc -p src -w",
     "build": "tsc -p src",
