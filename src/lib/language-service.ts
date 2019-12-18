@@ -39,7 +39,7 @@ export class LanguageService {
       }
     }
 
-    const output = this.tsService.getEmitOutput(fileName, true)
+    const output = this.tsService.getEmitOutput(fileName, true, true)
     const errors = this.collectErrorMessages(fileName)
 
     if (errors.length === 0) {
