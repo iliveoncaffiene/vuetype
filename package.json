@@ -1,6 +1,6 @@
 {
   "name": "@iliveoncaffiene/vuetype",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "katashin",
   "description": "Generate TypeScript declaration files for .vue files",
   "keywords": [
@@ -25,7 +25,9 @@
   "bin": {
     "vuetype": "dist/bin/vuetype.js"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/iliveoncaffiene" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/iliveoncaffiene"
+  },
   "scripts": {
     "prepublishOnly": "npm run lint && npm run clean && npm run build",
     "clean": "rimraf dist",
